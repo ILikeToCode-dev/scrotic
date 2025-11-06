@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socratic Math Tutor AI</title>
+    
+    <!-- KaTeX for math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPaDnsXKclCxFpbIY5we1-eFqlCZv2pIFecFCp3HNM" crossorigin="anonymous">
+    
+    <!-- TailwindCSS for styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Basic reset and global styles */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden; /* Prevent body scroll */
+        }
+
+        #root {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Dotted background for whiteboard */
+        .dotted-background {
+            background-color: #fdfdfd;
+            background-image: radial-gradient(circle, #e5e7eb 1px, rgba(0, 0, 0, 0) 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+        "rehype-katex": "https://aistudiocdn.com/rehype-katex@^7.0.1",
+        "remark-math": "https://aistudiocdn.com/remark-math@^6.0.0",
+        "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+      }
+    }
+    </script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
